@@ -1,21 +1,39 @@
 {
   "name": "whatsapp-football-bot",
   "version": "1.0.0",
-  "description": "WhatsApp bot for football fixtures and live scores",
+  "description": "WhatsApp bot for football fixtures, live scores, and AI predictions",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "pair": "node index.js --pairing-code",
+    "mobile": "node index.js --mobile"
   },
+  "keywords": [
+    "whatsapp-bot",
+    "football-bot",
+    "baileys",
+    "football-fixtures",
+    "live-scores"
+  ],
+  "author": "Football Bot",
+  "license": "MIT",
   "dependencies": {
-    "@google/generative-ai": "^0.1.0",
+    "@google/generative-ai": "^0.21.0",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.6.0",
-    "axios": "^1.6.0",
-    "pino": "^8.15.0",
-    "qrcode-terminal": "^0.12.0"
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.7.7",
+    "chalk": "^4.1.2",
+    "awesome-phonenumber": "^7.0.0",
+    "file-type": "^16.5.4",
+    "fs-extra": "^11.2.0",
+    "libphonenumber-js": "^1.11.9",
+    "node-cache": "^5.1.2",
+    "pino": "^8.21.0",
+    "qrcode-terminal": "^0.12.0",
+    "readline": "^1.3.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.7"
   }
 }
